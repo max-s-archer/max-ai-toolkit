@@ -1,0 +1,27 @@
+# Git Policy
+
+## Purpose
+
+Maintain a trustworthy, readable Git history across Max's projects while leaving repository-specific implementation details to the relevant project and specialized Toolkit skills.
+
+## Commit policy
+
+- Write commit messages in English.
+- Make each commit express one coherent, reviewable change. Do not combine unrelated implementation, formatting, generated output, and policy changes without a clear reason.
+- Describe only changes supported by the staged content. Do not claim tests passed, bugs were fixed, or behavior changed without evidence.
+- Follow an explicit project convention when it is more specific and does not conflict with this policy. Use the Conventional Commit Generator skill when a Conventional Commit message is required.
+
+## Release tag policy
+
+- Use an annotated, immutable release tag. Do not overwrite, move, delete, or force-push an existing release tag.
+- Use the project's documented release-version convention; use the `v`-prefixed Semantic Versioning form when no project convention exists.
+- Keep the release tag, release version metadata, and tagged commit traceable to the same release intent.
+- Write tag annotations, release notes, and other release-facing text in English.
+- Obtain explicit confirmation before any remote write, including pushing a release tag. Use the Release Tag skill for validation and execution details.
+
+## Repository integrity
+
+- Do not commit secrets, credentials, private keys, personal tokens, or sensitive local configuration.
+- Do not rewrite shared history or use force operations unless the author explicitly authorizes the exact operation and its scope.
+- Preserve unrelated working-tree changes. Stop and report ambiguity rather than discarding, overwriting, or staging another person's work.
+- Verify the observed repository state before reporting a commit, tag, push, merge, test, or release action as complete.
