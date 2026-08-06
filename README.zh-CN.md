@@ -18,10 +18,14 @@
 | 区域 | 用途 |
 | --- | --- |
 | [`policies/`](policies/) | 跨项目治理与约束 |
+| [`principles/`](principles/) | 长期工程价值观与决策理由 |
+| [`rules/`](rules/) | 可执行的 Agent 行为约束 |
 | [`skills/`](skills/) | 面向具体任务的可复用方法 |
 | [`roles/`](roles/) | Agent 职责定义 |
+| [`workflows/`](workflows/) | 可复用的发布、功能开发、Bug 修复与架构变更流程 |
+| [`templates/`](templates/) | 可复用的项目概览、ADR 与 Release Notes 输出骨架 |
 | [`docs/`](docs/) | Toolkit 的[架构](docs/architecture.md)与[迁移指南](docs/migration-guide.md) |
-| `principles/`、`rules/`、`workflows/`、`prompts/`、`templates/` | 仅在经过验证的可复用内容出现后创建 |
+| `prompts/` | 仅在经过验证的可复用内容出现后创建 |
 
 ## 语言
 

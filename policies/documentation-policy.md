@@ -27,6 +27,8 @@ Do not create documentation merely to restate self-evident code or to record tra
 ## Maintenance requirements
 
 - Give each document one primary responsibility and a name that reflects its durable purpose.
+- For a record series whose chronological order is part of its identity, use an append-only, zero-padded four-digit prefix such as `0001-adopt-offline-first-storage.md`. Never renumber, reuse, or repurpose an existing identifier.
+- Apply ordered prefixes to ADRs and other decision or record series only when sequence is meaningful. Do not add numeric prefixes to ordinary guides, policies, skills, workflows, or templates merely for visual ordering.
 - Link to the authoritative policy, rule, workflow, or template instead of duplicating its full content.
 - Review references when moving, renaming, or replacing a document.
 - Keep obsolete material only when it retains decision or migration value; otherwise remove it. Archived material must identify its replacement and should not be loaded as active guidance.

@@ -83,7 +83,7 @@ Maintain English public entry points, complete public examples, clear boundaries
 - [ ] Reusable material contains no product facts that change its core meaning.
 - [ ] The destination directory matches the content's primary responsibility.
 - [ ] An existing authoritative document has been reused or linked instead of duplicated.
-- [ ] The filename uses lowercase kebab-case and no temporary version labels.
+- [ ] The filename uses lowercase kebab-case, no temporary version labels, and an append-only numeric prefix only when the record series has meaningful chronological identity.
 - [ ] The document's language and any bilingual counterpart comply with the Language Policy.
 - [ ] Links, references, and navigation have been updated.
 - [ ] Agents will not load obsolete, archived, or task-irrelevant material by default.

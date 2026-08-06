@@ -18,10 +18,14 @@ Personal AI-agent engineering methods for Max's GitHub projects.
 | Area | Use |
 | --- | --- |
 | [`policies/`](policies/) | Cross-project governance and requirements |
+| [`principles/`](principles/) | Long-lived engineering values and decision rationale |
+| [`rules/`](rules/) | Executable agent behavior constraints |
 | [`skills/`](skills/) | Reusable methods for focused tasks |
 | [`roles/`](roles/) | Agent responsibility definitions |
+| [`workflows/`](workflows/) | Repeatable release, feature, bug-fix, and architecture-change processes |
+| [`templates/`](templates/) | Reusable project-overview, ADR, and release-notes output structures |
 | [`docs/`](docs/) | [Architecture](docs/architecture.md) and [migration guidance](docs/migration-guide.md) for this Toolkit |
-| `principles/`, `rules/`, `workflows/`, `prompts/`, `templates/` | Created as validated, reusable content is added |
+| `prompts/` | Created as validated, reusable content is added |
 
 ## Language
 
