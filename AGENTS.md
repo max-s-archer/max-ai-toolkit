@@ -9,6 +9,19 @@
 
 Do not load the entire Toolkit by default. Do not treat templates, examples, or archived material as active policy.
 
+## Select task assets
+
+| Task | Load |
+| --- | --- |
+| New product repository | `prompts/project-bootstrap.md`, `workflows/new-project.md`, and the project-overview template |
+| Feature or ambiguous request | Requirements Analysis, Feature Development Workflow, and the relevant product context |
+| Bug | Bug-Fix Workflow and the relevant reproduction evidence |
+| Consequential architecture change | Architecture Review, Architecture Change Workflow, and relevant ADRs |
+| Release | Release Workflow, Release Tag, and Release Notes Template |
+| Commit or push | `rules/git/commit-and-push.md` and Conventional Commit Generator |
+
+Load only the assets that apply. Use the [Toolkit Consumption Model](docs/consumption-model.md) when entering a product repository from this external Toolkit.
+
 ## Resolve conflicts
 
 Follow this precedence order:

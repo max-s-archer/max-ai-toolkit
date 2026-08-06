@@ -83,3 +83,4 @@ Before making a change, confirm the target repository, applicable scope, existin
 ## Related maintenance guidance
 
 - [Migration Guide](migration-guide.md)
+- [Toolkit Consumption Model](consumption-model.md)

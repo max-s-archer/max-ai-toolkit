@@ -2,6 +2,8 @@
 
 [Chinese (Simplified)](README.zh-CN.md)
 
+> Semantic source: English. Chinese counterpart: [README.zh-CN.md](README.zh-CN.md).
+
 Personal AI-agent engineering methods for Max's GitHub projects.
 
 `max-ai-toolkit` is a public, personal method repository. It provides reusable AI-agent development infrastructure rather than product requirements or implementation. It is optimized for Max's project ecosystem, not general-purpose use.
@@ -22,10 +24,10 @@ Personal AI-agent engineering methods for Max's GitHub projects.
 | [`rules/`](rules/) | Executable agent behavior constraints |
 | [`skills/`](skills/) | Reusable methods for focused tasks |
 | [`roles/`](roles/) | Agent responsibility definitions |
-| [`workflows/`](workflows/) | Repeatable release, feature, bug-fix, and architecture-change processes |
+| [`workflows/`](workflows/) | Repeatable project-bootstrap, release, feature, bug-fix, and architecture-change processes |
 | [`templates/`](templates/) | Reusable project-overview, ADR, and release-notes output structures |
-| [`docs/`](docs/) | [Architecture](docs/architecture.md) and [migration guidance](docs/migration-guide.md) for this Toolkit |
-| `prompts/` | Created as validated, reusable content is added |
+| [`docs/`](docs/) | [Architecture](docs/architecture.md), [consumption](docs/consumption-model.md), and [migration guidance](docs/migration-guide.md) |
+| [`prompts/`](prompts/) | Thin task entry points that compose validated Toolkit assets |
 
 ## Language
 
