@@ -21,6 +21,10 @@ Load information progressively in this order:
 - Read referenced material on demand; do not recursively load every linked document.
 - Do not treat templates, examples, archived material, or unrelated project files as active requirements.
 
+## Cross-device continuation
+
+When resuming a task from another device and the product's `AGENTS.md` identifies a development-state repository, read only the relevant project configuration, task handoff, and patch manifest from that repository. Then verify the reported branch, commit, working-tree state, and referenced files in the product repository. Treat synchronized task state as a lead, not as evidence that overrides the current repository.
+
 ## When context is insufficient
 
 State what is missing and why it matters. Inspect the relevant source when it is available; otherwise ask for clarification before making an assumption that would broaden scope, change ownership, or cause an irreversible action.

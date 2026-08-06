@@ -21,6 +21,8 @@ Create or update the product repository's `AGENTS.md` during bootstrap. It must:
 3. Identify the product's own entry documentation, architecture, decisions, validation commands, and project-specific overrides.
 4. State that the product repository overrides Toolkit guidance only explicitly and within the product's scope.
 
+When a project uses a separate private development-state repository for cross-device continuation, its `AGENTS.md` should additionally identify that repository's locator and the project ID used within it. Treat that repository as a source of temporary task state and patch transport only; product code, product decisions, and product documentation remain in the product repository.
+
 Use the following form in a new conversation, replacing the locator with the actual resolved path or reference:
 
 ```text

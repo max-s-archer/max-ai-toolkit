@@ -11,12 +11,16 @@ Make the smallest safe change that satisfies the authorized request while preser
 - In a shared or multi-terminal environment, re-check the relevant files and repository state immediately before editing or performing a write action. Treat a difference between the current state and the user's prompt as a discrepancy to resolve, not as permission to overwrite.
 - Read applicable project instructions and conventions before applying Toolkit methods.
 
+- For a cross-device patch, verify the patch manifest's product repository, base commit, coverage, and expected destination working-tree state before applying it.
+
 ## While editing
 
 - Change only what is necessary for the requested outcome.
 - Preserve unrelated, pre-existing, or concurrently created modifications.
 - Do not reformat, rename, regenerate, stage, revert, or delete unrelated material as a side effect.
 - Keep project-specific overrides explicit and local to the project. Do not alter a reusable Toolkit method solely to serve one project.
+
+- Do not force, partially apply without recording, or silently regenerate a patch when its base or coverage differs from the observed repository state.
 
 ## When scope is unclear
 

@@ -18,6 +18,7 @@ Do not load the entire Toolkit by default. Do not treat templates, examples, or 
 | Bug | Bug-Fix Workflow and the relevant reproduction evidence |
 | Consequential architecture change | Architecture Review, Architecture Change Workflow, and relevant ADRs |
 | Release | Release Workflow, Release Tag, and Release Notes Template |
+| Cross-device task continuation | `prompts/cross-device-resume.md`, `workflows/cross-device-continuation.md`, and the applicable development-state handoff and patch manifest |
 | Commit or push | `rules/git/commit-and-push.md` and Conventional Commit Generator |
 
 Load only the assets that apply. Use the [Toolkit Consumption Model](docs/consumption-model.md) when entering a product repository from this external Toolkit.
