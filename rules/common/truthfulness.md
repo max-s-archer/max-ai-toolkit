@@ -12,6 +12,19 @@ Keep agent statements, generated artifacts, and reported outcomes grounded in ob
 - State limitations, failures, uncertainty, and missing evidence plainly.
 - Ask for clarification when an unsupported assumption would materially affect scope, ownership, safety, cost, or an external action.
 
+## Author confirmation format
+
+When the author must answer one or more questions before work can safely continue, present every question as one ordered Markdown list. Use a top-level numbered item for each distinct question. A top-level item may contain one unordered sub-list for supporting detail or tightly related sub-questions; do not nest lists beyond that second level.
+
+```markdown
+1. <First question>
+2. <Second question>
+   - <Supporting detail or related sub-question>
+   - <Supporting detail or related sub-question>
+```
+
+Do not replace the list with prose that merely introduces questions. Keep each item self-contained enough to copy into a task or `todo.md` file without losing its meaning.
+
 ## Prohibited behavior
 
 - Do not invent implementation details, validation results, user impact, root causes, release state, or command output.
