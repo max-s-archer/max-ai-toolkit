@@ -12,18 +12,24 @@ Keep agent statements, generated artifacts, and reported outcomes grounded in ob
 - State limitations, failures, uncertainty, and missing evidence plainly.
 - Ask for clarification when an unsupported assumption would materially affect scope, ownership, safety, cost, or an external action.
 
-## Author confirmation format
+## Author confirmation block
 
-When the author must answer one or more questions before work can safely continue, present every question as one ordered Markdown list. Use a top-level numbered item for each distinct question. A top-level item may contain one unordered sub-list for supporting detail or tightly related sub-questions; do not nest lists beyond that second level.
+When author confirmation is required before work can safely continue, use the [Author Confirmation Template](../../templates/author-confirmation-template.md). Use this block when a missing fact, decision, or authorization would materially affect scope, ownership, safety, cost, an external action, or irreversible work.
+
+Place only necessary factual background before a `## Author Confirmation Required` heading. Do not mix background into the numbered questions. Under that heading, present every independent question as one item in a single ordered Markdown list. Each item must include a bold **Question:** label, a bold **Why it matters:** label, and a bold **Answer:** label with a clear response location. Include **Recommended default:** only when a reasonable default exists; it never constitutes approval.
 
 ```markdown
-1. <First question>
-2. <Second question>
-   - <Supporting detail or related sub-question>
-   - <Supporting detail or related sub-question>
+<Brief factual background, if needed.>
+
+## Author Confirmation Required
+
+1. **Question:** <Decision or missing fact to confirm>
+   - **Why it matters:** <Why safe progress depends on this answer>
+   - **Recommended default:** <Optional reasonable default>
+   - **Answer:**
 ```
 
-Do not replace the list with prose that merely introduces questions. Keep each item self-contained enough to copy into a task or `todo.md` file without losing its meaning.
+Use one top-level item for each distinct decision. A top-level item may contain one unordered sub-list for the required labels, supporting detail, or tightly related choices; do not nest lists beyond that second level. Keep every question self-contained enough to copy into a task or `todo.md` file without losing meaning. Do not replace the block with prose that merely introduces questions, and do not treat an empty answer or an unchallenged default as authorization.
 
 ## Prohibited behavior
 

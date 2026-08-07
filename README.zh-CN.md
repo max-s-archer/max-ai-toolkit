@@ -25,7 +25,7 @@
 | [`skills/`](skills/) | 面向具体任务的可复用方法 |
 | [`roles/`](roles/) | Agent 职责定义 |
 | [`workflows/`](workflows/) | 可复用的项目初始化、发布、功能开发、Bug 修复与架构变更流程 |
-| [`templates/`](templates/) | 可复用的项目概览、ADR 与 Release Notes 输出骨架 |
+| [`templates/`](templates/) | 可复用的项目概览、ADR、Release Notes 与作者确认输出骨架 |
 | [`docs/`](docs/) | Toolkit 的[架构](docs/architecture.md)、[消费模型](docs/consumption-model.md)与[迁移指南](docs/migration-guide.md) |
 | [`prompts/`](prompts/) | 组合已验证 Toolkit 资产的轻量任务入口 |
 
