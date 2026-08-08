@@ -9,7 +9,7 @@
 1. 阅读 `<toolkit-locator>/docs/consumption-model.md`。
 2. 阅读 `<toolkit-locator>/workflows/new-project.md`。
 3. 阅读 `<toolkit-locator>/AGENTS.md`，再只加载其路由到的必要 Policy、Role、Workflow、Skill 和 Template。
-4. 阅读目标项目的 `AGENTS.md`。若尚不存在，按 New Project Workflow 处理；但先请作者确认目标仓库和 Toolkit locator。
+4. 阅读目标项目的 `AGENTS.md` 及其明确路由到的每一份项目特定覆盖文档。若尚不存在，按 New Project Workflow 处理；但先请作者确认目标仓库和 Toolkit locator。
 5. 阅读目标项目已有的 README、架构文档、ADR 和构建/验证说明；只读取当前初始化或任务相关的部分。
 
 ## 多语言文档处理
@@ -26,6 +26,8 @@
 - 当前产品目标、已知范围和未解决事项
 - 可用的构建与验证基线，或仍缺失的配置
 - 建议使用的 Role、Workflow、Skill 和 Template
+- 已应用的项目特定覆盖及其所替代的 Toolkit 指引
+- 项目与 Toolkit 指引之间任何尚未解决的潜在冲突
 - 开始工作前仍需要作者确认的事项
 
 若缺少 Toolkit locator、目标项目路径、产品意图或必要授权，先请求澄清；不要猜测或创建文件。

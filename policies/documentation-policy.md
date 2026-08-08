@@ -17,6 +17,14 @@ Update relevant documentation in the same change when a change alters a public i
 
 Do not create documentation merely to restate self-evident code or to record transient implementation detail. Prefer a short, durable explanation over an exhaustive narrative.
 
+## Contract documents and working state
+
+Treat an authoritative product or Toolkit document as a contract for the repository revision in which it appears. It must describe confirmed, active facts, requirements, decisions, boundaries, and validation expectations; do not present pending approval, in-progress discussion, or proposed future state as current contract.
+
+Keep proposed work, open questions, iteration progress, temporary investigation notes, and device-handoff state in explicitly non-authoritative working artifacts such as a task list, iteration document, issue, or private development-state record. These artifacts may link to a contract document but must not silently change it.
+
+When a draft is necessary, identify it explicitly as a draft and ensure entry documents and agent routing do not treat it as authoritative. Promote a draft to a contract document only when its content has been confirmed for the relevant repository revision.
+
 ## Traceability and accuracy
 
 - Record consequential decisions with their context, chosen direction, and meaningful trade-offs.

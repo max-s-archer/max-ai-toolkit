@@ -21,6 +21,12 @@ Load information progressively in this order:
 - Read referenced material on demand; do not recursively load every linked document.
 - Do not treat templates, examples, archived material, or unrelated project files as active requirements.
 
+## Project-specific overrides
+
+Apply an explicit target-project rule before the Toolkit guidance it replaces, subject to higher-priority system and safety requirements. Treat a project rule as an override only when the project's `AGENTS.md` routes to it and it identifies the replaced Toolkit guidance, replacement rule, scope, and reason.
+
+When project material suggests a different rule but does not explicitly establish an override, inspect the relevant project instructions and source material first. If the conflict or scope remains unresolved, ask the author before proceeding. Do not treat an unlinked private prompt, an implied preference, or a missing statement as permission to override Toolkit guidance.
+
 ## Cross-device continuation
 
 When resuming a task from another device and the product's `AGENTS.md` identifies a development-state repository, read only the relevant project configuration, task handoff, and patch manifest from that repository. Then verify the reported branch, commit, working-tree state, and referenced files in the product repository. Treat synchronized task state as a lead, not as evidence that overrides the current repository.

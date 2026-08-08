@@ -23,6 +23,14 @@ Create or update the product repository's `AGENTS.md` during bootstrap. It must:
 
 When a project uses a separate private development-state repository for cross-device continuation, its `AGENTS.md` should additionally identify that repository's locator and the project ID used within it. Treat that repository as a source of temporary task state and patch transport only; product code, product decisions, and product documentation remain in the product repository.
 
+## Project-specific override protocol
+
+The Toolkit supplies the default method. A product repository may replace applicable Toolkit guidance only through an explicit, local override that its `AGENTS.md` routes an agent to read. Use [Toolkit Override Template](../templates/toolkit-override-template.md) or an equivalent project-local structure.
+
+Each override must identify the Toolkit guidance it replaces, the project replacement, its exact scope, and the reason it is needed. An unlinked private prompt, a general preference, or an implied difference is not an override.
+
+An override cannot conflict with system, safety, or other higher-priority requirements. When project material appears to differ from the Toolkit but does not meet the explicit-override requirements, inspect the relevant project instructions and source material. If the conflict or applicability remains uncertain, ask the author before acting; do not infer an override.
+
 Use the following form in a new conversation, replacing the locator with the actual resolved path or reference:
 
 ```text

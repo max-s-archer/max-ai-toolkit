@@ -11,6 +11,13 @@ Maintain a trustworthy, readable Git history across Max's projects while leaving
 - Describe only changes supported by the staged content. Do not claim tests passed, bugs were fixed, or behavior changed without evidence.
 - Follow an explicit project convention when it is more specific and does not conflict with this policy. Use the Conventional Commit Generator skill when a Conventional Commit message is required.
 
+## Atomicity and repository consistency
+
+- Make each commit an atomic, independently reviewable change: it should have one coherent purpose and be safe to understand, revert, or cherry-pick without relying on unrelated staged work.
+- Atomicity does not mean one file or a small diff. Include the implementation, tests, and contract-document updates required for one coherent change in the same commit.
+- Do not combine unconfirmed plans, temporary task state, unrelated cleanup, generated output, or separate behavior changes with an otherwise atomic change.
+- After a commit, its implementation, tests, and authoritative documentation must not contradict one another. A contract document in that revision describes the confirmed state of that revision, not a pending or in-progress state.
+
 ## Release tag policy
 
 - Use an annotated, immutable release tag. Do not overwrite, move, delete, or force-push an existing release tag.

@@ -9,13 +9,15 @@ Create a trustworthy Git commit or push only after the changed state, commit mes
 - Confirm explicit author authorization to create a commit. A request to generate a message, inspect a diff, or prepare files is not authorization to commit.
 - Inspect the current branch or revision, working-tree status, and relevant diff.
 - Inspect the staged diff and staged file list. Confirm that they contain only the intended, authorized change.
+- Confirm that the staged change is atomic: it has one coherent purpose, excludes unrelated cleanup and temporary working state, and includes any implementation, tests, and contract-document updates needed to keep the staged revision internally consistent.
+- When an authoritative document is staged, verify that it describes the confirmed state introduced or retained by the staged revision, rather than a pending approval, proposal, or in-progress task.
 - Stop and report unrelated, concurrent, untracked, or ambiguous changes rather than staging, discarding, or including them by default.
 - Run the applicable validation and record only the checks that actually completed.
 - Generate the commit message from the staged content using [Conventional Commit Generator](../../skills/conventional-commit-generator.md) when Conventional Commits apply. Review the generated message against the staged diff before committing; do not commit an unchecked or unsupported message.
 
 ## Creating and verifying a commit
 
-- Create one coherent, reviewable commit that matches the authorized scope.
+- Create one atomic, coherent, reviewable commit that matches the authorized scope.
 - Verify the resulting commit identifier, subject, changed files, and relevant diff before reporting success.
 - Report validation performed, omitted checks, and remaining limitations accurately.
 
