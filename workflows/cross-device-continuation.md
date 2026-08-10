@@ -23,6 +23,9 @@ Use a separate, private development-state repository to transport concise task s
   - registry.md
   - <project-id>/
     - project.md
+    - author-todo.md
+    - author-prompts.md
+    - agent-proposals.md
     - active/<task-id>/
       - handoff.md
       - patches/
@@ -33,7 +36,7 @@ Use a separate, private development-state repository to transport concise task s
 - devices/<device-id>.md
 ```
 
-`projects/registry.md` is a navigation index. Each `project.md` records stable continuation configuration such as the product repository locator, default branch, entry documents, and validation references. Each active task has exactly one `handoff.md`; do not split its live state across status, next-task, and decision files. `global/current-focus.md` is only a convenience pointer and links to the authoritative task handoff.
+`projects/registry.md` is a navigation index. Each `project.md` records stable continuation configuration such as the product repository locator, default branch, entry documents, and validation references. `author-todo.md`, `author-prompts.md`, and `agent-proposals.md` are private, non-authoritative working artifacts governed by the [Private Working-State Rule](../rules/common/private-working-state.md). Keep them only in the development-state repository; do not create local, ignored, empty placeholder, symbolic link, or mirrored copies in the product repository. Each active task has exactly one `handoff.md`; do not split its live state across status, next-task, and decision files. `global/current-focus.md` is only a convenience pointer and links to the authoritative task handoff.
 
 ## Workflow
 
@@ -45,7 +48,7 @@ If uncommitted changes must move between devices, create a patch and [Patch Mani
 
 ### 2. Publish resumable state
 
-Commit and synchronize the development-state repository under its own access controls. Keep a handoff and its required patch artifacts in the same state-repository revision whenever practical. Do not commit product code or product-local secrets to the state repository.
+Commit and synchronize the development-state repository under its own access controls. Keep a handoff and its required patch artifacts in the same state-repository revision whenever practical. Synchronize private working-state artifacts only through this repository; do not create product-local copies for synchronization. Do not commit product code or product-local secrets to the state repository.
 
 ### 3. Verify the destination
 

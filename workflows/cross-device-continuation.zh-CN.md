@@ -25,6 +25,9 @@
   - registry.md
   - <project-id>/
     - project.md
+    - author-todo.md
+    - author-prompts.md
+    - agent-proposals.md
     - active/<task-id>/
       - handoff.md
       - patches/
@@ -35,7 +38,7 @@
 - devices/<device-id>.md
 ```
 
-`projects/registry.md` 是导航索引。每个 `project.md` 记录稳定接续配置，例如产品仓库定位符、默认分支、入口文档和验证引用。每个活动任务恰有一个 `handoff.md`；不要将实时状态拆分到状态、下一任务和决策文件中。`global/current-focus.md` 只是便捷指针，并链接到权威任务交接记录。
+`projects/registry.md` 是导航索引。每个 `project.md` 记录稳定接续配置，例如产品仓库定位符、默认分支、入口文档和验证引用。`author-todo.md`、`author-prompts.md` 和 `agent-proposals.md` 是由[私有工作状态规则](../rules/common/private-working-state.zh-CN.md)约束的私有非权威工作产物。仅将它们保留在开发状态仓库中；不得在产品仓库中创建本地副本、已忽略副本、空占位文件、符号链接或镜像副本。每个活动任务恰有一个 `handoff.md`；不要将实时状态拆分到状态、下一任务和决策文件中。`global/current-focus.md` 只是便捷指针，并链接到权威任务交接记录。
 
 ## 工作流
 
@@ -47,7 +50,7 @@
 
 ### 2. 发布可恢复状态
 
-依照自身访问控制提交并同步开发状态仓库。实际可行时，在同一状态仓库修订中保留交接记录及必要的 patch 产物。不要向状态仓库提交产品代码或产品本地机密。
+依照自身访问控制提交并同步开发状态仓库。实际可行时，在同一状态仓库修订中保留交接记录及必要的 patch 产物。仅通过此仓库同步私有工作状态产物；不得为同步目的创建产品仓库内的本地副本。不要向状态仓库提交产品代码或产品本地机密。
 
 ### 3. 验证目标设备
 

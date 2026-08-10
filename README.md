@@ -25,7 +25,7 @@ Personal AI-agent engineering methods for Max's GitHub projects.
 | [`skills/`](skills/) | Reusable methods for focused tasks |
 | [`roles/`](roles/) | Agent responsibility definitions |
 | [`workflows/`](workflows/) | Repeatable project-bootstrap, release, feature, bug-fix, and architecture-change processes |
-| [`templates/`](templates/) | Reusable project-overview, ADR, release-notes, and author-confirmation output structures |
+| [`templates/`](templates/) | Reusable project-overview, ADR, release-notes, author-confirmation, and private working-state structures |
 | [`docs/`](docs/) | [Architecture](docs/architecture.md), [consumption](docs/consumption-model.md), and [migration guidance](docs/migration-guide.md) |
 | [`prompts/`](prompts/) | Thin task entry points that compose validated Toolkit assets |
 

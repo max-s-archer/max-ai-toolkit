@@ -25,6 +25,8 @@
 
 项目使用独立的私有开发状态仓库进行跨设备接续时，其 `AGENTS.md` 还应标识该仓库定位符及其中使用的项目 ID。将该仓库只视为临时任务状态和 patch 传输来源；产品代码、产品决策和产品文档仍保留在产品仓库。
 
+将 `author-todo.md`、`author-prompts.md` 和 `agent-proposals.md` 等私有作者工作状态仅保留在开发状态仓库中。不得在产品仓库中创建本地、已忽略、镜像或占位副本。创建或修改这些产物时，阅读[私有工作状态规则](../rules/common/private-working-state.zh-CN.md)。
+
 ## 项目特定覆盖协议
 
 Toolkit 提供默认方法。产品仓库仅可通过其 `AGENTS.md` 路由 Agent 阅读的明确本地覆盖，替代适用的 Toolkit 指引。使用 [Toolkit 覆盖模板](../templates/toolkit-override-template.md)，或使用等效的项目本地结构。

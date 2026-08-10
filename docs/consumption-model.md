@@ -23,6 +23,8 @@ Create or update the product repository's `AGENTS.md` during bootstrap. It must:
 
 When a project uses a separate private development-state repository for cross-device continuation, its `AGENTS.md` should additionally identify that repository's locator and the project ID used within it. Treat that repository as a source of temporary task state and patch transport only; product code, product decisions, and product documentation remain in the product repository.
 
+Keep private author working state such as `author-todo.md`, `author-prompts.md`, and `agent-proposals.md` only in the development-state repository. Do not create local, ignored, mirrored, or placeholder copies in the product repository. Read [Private Working-State Rule](../rules/common/private-working-state.md) when creating or changing these artifacts.
+
 ## Project-specific override protocol
 
 The Toolkit supplies the default method. A product repository may replace applicable Toolkit guidance only through an explicit, local override that its `AGENTS.md` routes an agent to read. Use [Toolkit Override Template](../templates/toolkit-override-template.md) or an equivalent project-local structure.
