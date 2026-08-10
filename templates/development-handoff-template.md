@@ -17,6 +17,7 @@ Replace placeholders with observed facts. Remove inapplicable sections; do not i
 - Status: `<active | paused | blocked | closed>`
 - Last updated: `<UTC timestamp>`
 - Updated on: `<device-id or environment>`
+- Target command environment: `<operating system and shell, or unknown>`
 
 ## Objective and Boundary
 
@@ -41,6 +42,7 @@ Replace placeholders with observed facts. Remove inapplicable sections; do not i
 - Current state: <What is true now>
 - Next action: <Smallest next action>
 - Required validation: <Command, check, or focused manual validation>
+- Platform-specific instructions: <Required operating system and shell, or none>
 
 ## Decisions, Assumptions, and Questions
 

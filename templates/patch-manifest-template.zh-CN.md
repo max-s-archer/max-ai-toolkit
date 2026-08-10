@@ -18,6 +18,7 @@
 - 任务 ID：`<task-id>`
 - 创建时间：`<UTC timestamp>`
 - 源设备或环境：`<device-id or environment>`
+- 预期目标命令环境：`<operating system and shell, or unknown>`
 
 ## 产品仓库基础
 
@@ -28,7 +29,7 @@
 
 ## Patch 文件和顺序
 
-1. `<001-base-short-sha.patch>` — SHA-256：`<hash>`
+1. `<001-base-short-sha.patch>`; SHA-256: `<hash>`
 
 ## 覆盖范围
 
@@ -40,6 +41,7 @@
 
 - 兼容性检查：<应用前的试运行或等效检查>
 - 应用顺序和命令：<确切的已授权方法>
+- 命令可移植性：<所需操作系统和 shell，或已验证的替代方案>
 - 应用后的预期 diff：<摘要或比较命令>
 - 必要验证：<命令和聚焦手动检查>
 

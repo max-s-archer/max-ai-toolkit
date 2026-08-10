@@ -19,6 +19,7 @@
 - 状态：`<active | paused | blocked | closed>`
 - 最后更新：`<UTC timestamp>`
 - 更新设备或环境：`<device-id or environment>`
+- 目标命令环境：`<operating system and shell, or unknown>`
 
 ## 目标和边界
 
@@ -43,6 +44,7 @@
 - 当前状态：<当前为真的事项>
 - 下一步行动：<最小下一步行动>
 - 必要验证：<命令、检查或聚焦手动验证>
+- 平台特定指引：<所需操作系统和 shell，或 none>
 
 ## 决策、假设和问题
 

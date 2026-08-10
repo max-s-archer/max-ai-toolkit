@@ -18,19 +18,19 @@ Use a separate, private development-state repository to transport concise task s
 
 ```text
 <development-state-repository>/
-├── README.md
-├── projects/
-│   ├── registry.md
-│   └── <project-id>/
-│       ├── project.md
-│       ├── active/<task-id>/
-│       │   ├── handoff.md
-│       │   └── patches/
-│       │       ├── manifest.md
-│       │       └── 001-<base-short-sha>.patch
-│       └── archive/
-├── global/current-focus.md
-└── devices/<device-id>.md
+- README.md
+- projects/
+  - registry.md
+  - <project-id>/
+    - project.md
+    - active/<task-id>/
+      - handoff.md
+      - patches/
+        - manifest.md
+        - 001-<base-short-sha>.patch
+    - archive/
+- global/current-focus.md
+- devices/<device-id>.md
 ```
 
 `projects/registry.md` is a navigation index. Each `project.md` records stable continuation configuration such as the product repository locator, default branch, entry documents, and validation references. Each active task has exactly one `handoff.md`; do not split its live state across status, next-task, and decision files. `global/current-focus.md` is only a convenience pointer and links to the authoritative task handoff.
@@ -39,7 +39,7 @@ Use a separate, private development-state repository to transport concise task s
 
 ### 1. Prepare the handoff on the source device
 
-Check the product repository's branch, full `HEAD` commit, working-tree status, relevant diff, and validation results. Create or update `handoff.md` with [Development Handoff Template](../templates/development-handoff-template.md). Separate observed facts from inferences and proposed next actions.
+Check the product repository's branch, full `HEAD` commit, working-tree status, relevant diff, validation results, and source-device operating system and shell. Create or update `handoff.md` with [Development Handoff Template](../templates/development-handoff-template.md). Separate observed facts from inferences and proposed next actions. Follow [Cross-Platform Portability Rule](../rules/common/cross-platform-portability.md) for shared paths, commands, and diagrams.
 
 If uncommitted changes must move between devices, create a patch and [Patch Manifest](../templates/patch-manifest-template.md). State exactly what the patch includes and excludes, including untracked, ignored, generated, or binary files. Do not claim it represents the whole working tree unless verified.
 
@@ -49,9 +49,9 @@ Commit and synchronize the development-state repository under its own access con
 
 ### 3. Verify the destination
 
-Synchronize the development-state repository and read the selected `project.md`, `handoff.md`, and patch manifest. Synchronize the product repository and inspect its remote, branch, `HEAD`, working tree, and referenced files.
+Synchronize the development-state repository and read the selected `project.md`, `handoff.md`, and patch manifest. Identify the destination operating system and shell. Synchronize the product repository and inspect its remote, branch, `HEAD`, working tree, and referenced files.
 
-Treat the handoff as a claim to verify, not a replacement for repository evidence. Stop and report a discrepancy when the product repository does not match the patch base, has conflicting work, or the patch coverage is insufficient.
+Treat the handoff as a claim to verify, not a replacement for repository evidence. Do not treat a source-device command or path form as executable on the destination without confirming its portability or labeled destination environment. Stop and report a discrepancy when the product repository does not match the patch base, has conflicting work, or the patch coverage is insufficient.
 
 ### 4. Apply and validate a patch when authorized
 

@@ -20,19 +20,19 @@
 
 ```text
 <development-state-repository>/
-├── README.md
-├── projects/
-│   ├── registry.md
-│   └── <project-id>/
-│       ├── project.md
-│       ├── active/<task-id>/
-│       │   ├── handoff.md
-│       │   └── patches/
-│       │       ├── manifest.md
-│       │       └── 001-<base-short-sha>.patch
-│       └── archive/
-├── global/current-focus.md
-└── devices/<device-id>.md
+- README.md
+- projects/
+  - registry.md
+  - <project-id>/
+    - project.md
+    - active/<task-id>/
+      - handoff.md
+      - patches/
+        - manifest.md
+        - 001-<base-short-sha>.patch
+    - archive/
+- global/current-focus.md
+- devices/<device-id>.md
 ```
 
 `projects/registry.md` 是导航索引。每个 `project.md` 记录稳定接续配置，例如产品仓库定位符、默认分支、入口文档和验证引用。每个活动任务恰有一个 `handoff.md`；不要将实时状态拆分到状态、下一任务和决策文件中。`global/current-focus.md` 只是便捷指针，并链接到权威任务交接记录。
@@ -41,7 +41,7 @@
 
 ### 1. 在源设备准备交接
 
-检查产品仓库的分支、完整 `HEAD` 提交、工作树状态、相关 diff 和验证结果。使用[开发交接模板](../templates/development-handoff-template.md)创建或更新 `handoff.md`。将观察事实与推论和建议的下一步行动分开记录。
+检查产品仓库的分支、完整 `HEAD` 提交、工作树状态、相关 diff、验证结果以及源设备的操作系统和 shell。使用[开发交接模板](../templates/development-handoff-template.md)创建或更新 `handoff.md`。将观察事实与推论和建议的下一步行动分开记录。对共享路径、命令和图示遵循[跨平台可移植性规则](../rules/common/cross-platform-portability.md)。
 
 若必须迁移未提交变更，创建 patch 及其[Patch 清单](../templates/patch-manifest-template.md)。精确说明 patch 包含和排除的内容，包括未跟踪、已忽略、生成或二进制文件。除非已验证，否则不要声称它代表整个工作树。
 
@@ -51,9 +51,9 @@
 
 ### 3. 验证目标设备
 
-同步开发状态仓库并读取选定的 `project.md`、`handoff.md` 和 patch 清单。同步产品仓库并检查其远程、分支、`HEAD`、工作树和引用文件。
+同步开发状态仓库并读取选定的 `project.md`、`handoff.md` 和 patch 清单。识别目标设备的操作系统和 shell。同步产品仓库并检查其远程、分支、`HEAD`、工作树和引用文件。
 
-将交接记录视为待验证的声明，而不是仓库证据的替代品。若产品仓库与 patch 基础不匹配、包含冲突工作，或 patch 覆盖范围不足，则停止并报告差异。
+将交接记录视为待验证的声明，而不是仓库证据的替代品。未经确认可移植性或目标环境标注，不得将源设备的命令或路径形式视为可在目标设备执行。若产品仓库与 patch 基础不匹配、包含冲突工作，或 patch 覆盖范围不足，则停止并报告差异。
 
 ### 4. 在获得授权后应用并验证 patch
 

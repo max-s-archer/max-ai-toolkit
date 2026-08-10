@@ -16,6 +16,7 @@ Record only observed details. Do not include secrets or use a manifest to concea
 - Task ID: `<task-id>`
 - Created: `<UTC timestamp>`
 - Source device or environment: `<device-id or environment>`
+- Intended destination command environment: `<operating system and shell, or unknown>`
 
 ## Product-Repository Base
 
@@ -26,7 +27,7 @@ Record only observed details. Do not include secrets or use a manifest to concea
 
 ## Patch Files and Order
 
-1. `<001-base-short-sha.patch>` — SHA-256: `<hash>`
+1. `<001-base-short-sha.patch>`; SHA-256: `<hash>`
 
 ## Coverage
 
@@ -38,6 +39,7 @@ Record only observed details. Do not include secrets or use a manifest to concea
 
 - Compatibility check: <Dry-run or equivalent check before applying>
 - Apply order and command: <Exact authorized method>
+- Command portability: <Required operating system and shell, or verified alternatives>
 - Expected diff after application: <Summary or comparison command>
 - Required validation: <Commands and focused manual checks>
 
