@@ -17,6 +17,14 @@ Update relevant documentation in the same change when a change alters a public i
 
 Do not create documentation merely to restate self-evident code or to record transient implementation detail. Prefer a short, durable explanation over an exhaustive narrative.
 
+## Planned locations and document creation
+
+A planned document location defines a future responsibility, not an existing conclusion, contract, or source of authority. An entry document or documentation map may identify a planned path, its intended responsibility, and the condition under which it should be created.
+
+Create an authoritative document only when confirmed inputs, evidence, or an authorized decision exist for its responsibility. Do not create empty architecture, validation, security, privacy, decision, release, or similar documents merely to complete a planned repository structure.
+
+Do not link to a planned path as though it were a current authoritative document. When an applicable document is created, give it one confirmed responsibility and ensure that its statements describe the active contract for the repository revision. Keep unresolved questions, exploratory work, and proposed content in non-authoritative working artifacts until they are confirmed.
+
 ## Contract documents and working state
 
 Treat an authoritative product or Toolkit document as a contract for the repository revision in which it appears. It must describe confirmed, active facts, requirements, decisions, boundaries, and validation expectations; do not present pending approval, in-progress discussion, or proposed future state as current contract.
