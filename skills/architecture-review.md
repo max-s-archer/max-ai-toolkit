@@ -24,7 +24,7 @@ description: Review a proposed or existing software architecture, change, diff, 
 3. **Assess lifecycle and failure paths**：在适用时检查初始化、并发、资源释放、错误处理、恢复、持久化和边界条件。
 4. **Assess change impact**：检查兼容性、迁移、可观测性、测试、性能、安全与交付风险；只评估当前场景相关的维度。
 5. **Compare alternatives**：当选择尚未确定或 trade-off 显著时，指出保留现状与其他可行方案的主要代价。
-6. **Recommend next action**：建议保持、澄清、记录 ADR、调整设计、分阶段迁移或进入实现；重大结论应连接到可验证证据。
+6. **Recommend next action**：建议保持、澄清、记录实施前技术方向、调整设计、分阶段迁移或进入实现；只有架构方向已经实施、接受、commit 并同步后，才建议按架构决策记录规则创建 `Active` ADR。重大结论应连接到可验证证据。
 
 ## 输出格式
 

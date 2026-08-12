@@ -23,7 +23,7 @@ Personal AI-agent engineering methods for Max's GitHub projects.
 | [`principles/`](principles/) | Long-lived engineering values and decision rationale |
 | [`rules/`](rules/) | Executable agent behavior constraints |
 | [`skills/`](skills/) | Reusable methods for focused tasks |
-| [`roles/`](roles/) | Agent responsibility definitions |
+| [`roles/`](roles/) | Agent responsibility definitions and the [authorization matrix](roles/authorization-matrix.md) |
 | [`workflows/`](workflows/) | Repeatable project-bootstrap, release, feature, bug-fix, and architecture-change processes |
 | [`templates/`](templates/) | Reusable project-overview, ADR, release-notes, author-confirmation, and private working-state structures |
 | [`docs/`](docs/) | [Architecture](docs/architecture.md), [consumption](docs/consumption-model.md), and [migration guidance](docs/migration-guide.md) |

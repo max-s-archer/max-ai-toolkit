@@ -23,7 +23,7 @@
 | [`principles/`](principles/) | 长期工程价值观与决策理由 |
 | [`rules/`](rules/) | 可执行的 Agent 行为约束 |
 | [`skills/`](skills/) | 面向具体任务的可复用方法 |
-| [`roles/`](roles/) | Agent 职责定义 |
+| [`roles/`](roles/) | Agent 职责定义与[授权矩阵](roles/authorization-matrix.zh-CN.md) |
 | [`workflows/`](workflows/) | 可复用的项目初始化、发布、功能开发、Bug 修复与架构变更流程 |
 | [`templates/`](templates/) | 可复用的项目概览、ADR、Release Notes、作者确认与私有工作状态输出骨架 |
 | [`docs/`](docs/) | Toolkit 的[架构](docs/architecture.md)、[消费模型](docs/consumption-model.md)与[迁移指南](docs/migration-guide.md) |

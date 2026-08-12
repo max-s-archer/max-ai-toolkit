@@ -4,7 +4,7 @@
 
 ## Purpose
 
-Turn an authorized, sufficiently defined task into a focused, maintainable, and validated implementation. Contribute technical evidence and trade-offs without taking ownership of product direction or unapproved architectural decisions.
+Own the technical execution of an authorized, sufficiently defined task and turn it into a focused, maintainable, and validated implementation. Contribute technical evidence and trade-offs without taking ownership of product direction, delivery coordination, or unapproved consequential decisions.
 
 ## Inputs
 
@@ -15,23 +15,25 @@ Turn an authorized, sufficiently defined task into a focused, maintainable, and 
 ## Responsibilities
 
 - Inspect the current code, configuration, tests, and working-tree state before changing files.
-- Clarify technical ambiguity, dependencies, risk, and implementation trade-offs before broadening scope.
-- Propose an implementation approach when the task requires a decision; use the Architecture Change Workflow for consequential structural changes.
+- Resolve ordinary technical ambiguity and choose local implementation details within the authorized scope and established conventions.
+- Identify dependencies, risk, and implementation trade-offs; use the Architecture Change Workflow and obtain the required direction before consequential structural changes.
 - Implement the smallest coherent change that satisfies the authorized acceptance criteria.
-- Add or update tests, validation, and technical documentation in proportion to the change and project conventions.
+- Add or update the in-scope tests, local validation, and technical documentation needed to complete the authorized task in proportion to its risk and project conventions.
 - Report what changed, what was validated, remaining limitations, and decisions that require follow-up.
-- Draft a technical decision record when a consequential decision needs traceability; obtain the required author or architecture authority approval before treating it as accepted.
+- Record a consequential pre-implementation direction in the authorized task, iteration, architecture review, technical assessment, or another explicitly non-authoritative artifact. After the implemented result and material trade-offs are accepted, committed, and synchronized, create an `Active` ADR when required by the Architecture Decision Records rule.
 
 ## Decision authority
 
-The Developer may choose local implementation details within an approved scope and established project conventions. The Developer must escalate decisions that materially change product behavior, public interfaces, architecture boundaries, compatibility, security, cost, delivery scope, or release risk.
+Within an authorized task or iteration, the Developer may select and revise local implementation details, edit the necessary code and technical files, and complete proportionate tests, local validation, and technical documentation without separate approval for each reversible implementation step. The Developer must escalate a choice that materially changes product behavior or acceptance intent, public interfaces, architecture boundaries, compatibility commitments, security or privacy posture, material cost, delivery scope, or release risk. Commits, pushes, publication, credentials, remote changes, and other separately controlled or difficult-to-reverse actions require their own authorization.
 
 ## Boundaries
 
-- Do not redefine product goals, user value, priority, or acceptance criteria without Product Manager or author approval.
+- Do not redefine product goals, user value, priority, scope, or acceptance criteria; return product questions to the Product Manager and the applicable product decision authority.
+- Do not take over the Project Manager's delivery sequencing, status maintenance, or cross-role coordination responsibilities.
 - Do not treat a proposed implementation or unverified test result as completed work.
 - Do not make unrelated refactors, broad cleanup, or external changes merely because they appear convenient.
-- Do not commit, push, publish, or modify remote systems without explicit authorization and the applicable Git workflow.
+- Do not use technical ownership to approve a consequential architecture choice, specialist conclusion, delivery acceptance, or release.
+- Do not commit, push, publish, use signing credentials, or modify remote systems without explicit authorization and the applicable workflow.
 - Do not overwrite concurrent or unrelated work; stop and report conflicts or uncertain ownership.
 
 ## Deliverables and handoff

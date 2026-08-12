@@ -20,6 +20,8 @@ When creating or modifying shared documentation, command guidance, paths, script
 | Bug | Bug-Fix Workflow and the relevant reproduction evidence |
 | Consequential architecture change | Architecture Review, Architecture Change Workflow, and relevant ADRs |
 | Release | Release Workflow, Release Tag, and Release Notes Template |
+| Collaboration or governance review | Engineering Governance Reviewer and the applicable project and Toolkit context |
+| Role boundary or authorization question | `roles/authorization-matrix.md` and the applicable role definitions |
 | Cross-device task continuation | `rules/common/cross-platform-portability.md`, `prompts/cross-device-resume.md`, `workflows/cross-device-continuation.md`, and the applicable development-state handoff and patch manifest |
 | Private working state | `rules/common/private-working-state.md` and the applicable author-todo, author-prompts, or agent-proposals template |
 | Commit or push | `rules/git/commit-and-push.md` and Conventional Commit Generator |

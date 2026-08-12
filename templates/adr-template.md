@@ -1,8 +1,10 @@
 # Architecture Decision Record Template
 
+> Semantic source: English. Chinese counterpart: [adr-template.zh-CN.md](adr-template.zh-CN.md).
+
 ## Use
 
-Create ADRs in the target product repository when a decision is consequential, difficult to reverse, or needed to preserve architectural context. This Toolkit provides the method and template; it does not own product ADRs.
+Create ADRs in the target product repository only for implemented architecture decisions that satisfy [Architecture Decision Records](../rules/common/architecture-decision-records.md). Use an authorized task, iteration, architecture review, or technical assessment for a pre-implementation proposal. This Toolkit provides the method and template; it does not own product ADRs.
 
 Name each record with the next four-digit sequence number and a concise lowercase kebab-case title:
 
@@ -10,7 +12,7 @@ Name each record with the next four-digit sequence number and a concise lowercas
 docs/decisions/0001-adopt-offline-first-storage.md
 ```
 
-The sequence belongs to the target repository. Append the next number; never renumber, reuse, or repurpose an existing ADR identifier. Once an ADR is accepted, preserve it as a historical decision. Record a changed decision in a new ADR that explicitly supersedes the earlier record.
+The sequence belongs to the target repository. Append the next number; never renumber, reuse, or repurpose an existing ADR identifier. Preserve inactive ADRs as historical decisions. Record a consequential replacement in a new ADR, then make the earlier ADR inactive only after the replacement is implemented, accepted, committed, and synchronized.
 
 ---
 
@@ -18,7 +20,9 @@ The sequence belongs to the target repository. Append the next number; never ren
 
 ## Status
 
-Accepted
+- Value: `Active`
+- Updated: YYYY-MM-DD
+- Basis: <Author or architecture-authority acceptance, synchronized implementation and documentation evidence>
 
 ## Date
 
@@ -56,6 +60,20 @@ Describe expected positive, negative, operational, compatibility, migration, and
 
 Record the required migration path, compatibility plan, or follow-up work when applicable.
 
-## Supersedes
+## Implementation and Validation Evidence
+
+- Implementation commits:
+- Synchronized documentation:
+- Validation or accepted gaps:
+- Prior proposal or assessment:
+
+## Replaces
 
 None
+
+## Inactivation
+
+- Date: Not applicable while `Active`
+- Reason: Not applicable while `Active`
+- Replaced by: None
+- Consequences: None
