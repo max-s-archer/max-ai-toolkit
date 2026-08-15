@@ -24,6 +24,7 @@ When creating or modifying shared documentation, command guidance, paths, script
 | Role boundary or authorization question | `roles/authorization-matrix.md` and the applicable role definitions |
 | Cross-device task continuation | `rules/common/cross-platform-portability.md`, `prompts/cross-device-resume.md`, `workflows/cross-device-continuation.md`, and the applicable development-state handoff and patch manifest |
 | Private working state | `rules/common/private-working-state.md` and the applicable author-todo, author-prompts, or agent-proposals template |
+| Author file annotation | `rules/common/author-annotations.md` and the applicable target-file and project context |
 | Commit or push | `rules/git/commit-and-push.md` and Conventional Commit Generator |
 
 Load only the assets that apply. Use the [Toolkit Consumption Model](docs/consumption-model.md) when entering a product repository from this external Toolkit.

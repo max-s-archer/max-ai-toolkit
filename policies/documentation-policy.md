@@ -31,6 +31,8 @@ Treat an authoritative product or Toolkit document as a contract for the reposit
 
 Keep proposed work, open questions, iteration progress, temporary investigation notes, and device-handoff state in explicitly non-authoritative working artifacts such as a task list, iteration document, issue, or private development-state record. These artifacts may link to a contract document but must not silently change it.
 
+An [author annotation](../rules/common/author-annotations.md) is a narrow source-level exception for a bounded review or change request beside its target text. It remains non-authoritative, must use an HTML comment, and must be removed or transferred to the designated private working state when it is resolved or becomes durable. Do not commit an unresolved annotation as part of an authoritative document.
+
 When a draft is necessary, identify it explicitly as a draft and ensure entry documents and agent routing do not treat it as authoritative. Promote a draft to a contract document only when its content has been confirmed for the relevant repository revision.
 
 ## Traceability and accuracy
