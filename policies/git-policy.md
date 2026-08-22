@@ -18,6 +18,13 @@ Maintain a trustworthy, readable Git history across Max's projects while leaving
 - Do not combine unconfirmed plans, temporary task state, unrelated cleanup, generated output, or separate behavior changes with an otherwise atomic change.
 - After a commit, its implementation, tests, and authoritative documentation must not contradict one another. A contract document in that revision describes the confirmed state of that revision, not a pending or in-progress state.
 
+## Branch and worktree policy
+
+- Keep one authoritative integration branch unless a target project explicitly defines another model.
+- Use short-lived, scope-based branches and isolated worktrees only when active work benefits from separation. Do not turn branches into competing project authority or durable delivery status.
+- Serialize dependent or high-overlap work, and re-check contracts, implementation, tests, and validation evidence before integration.
+- Follow the [Branch and Worktree Coordination Rule](../rules/git/branch-and-worktree.md). Keep project-specific naming, concurrency limits, and integration gates in the target repository.
+
 ## Release tag policy
 
 - Use an annotated, immutable release tag. Do not overwrite, move, delete, or force-push an existing release tag.
