@@ -4,6 +4,13 @@
 
 Create a trustworthy Git commit or push only after the changed state, commit message, authorization, and remote target have been verified.
 
+## Short trigger
+
+Resolve `提交检查` and `提交` through
+[Short Triggers](../../prompts/short-triggers.md).
+This rule remains authoritative for the commit threshold, review,
+and authorization boundary.
+
 ## Before creating a commit
 
 - Confirm explicit author authorization to create a commit. A request to generate a message, inspect a diff, or prepare files is not authorization to commit.

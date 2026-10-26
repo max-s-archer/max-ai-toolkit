@@ -26,6 +26,7 @@ When creating or modifying shared documentation, command guidance, paths, script
 | Private working state | `rules/common/private-working-state.md` and the applicable author-todo, author-prompts, or agent-proposals template |
 | Author file annotation | `rules/common/author-annotations.md` and the applicable target-file and project context |
 | Branch or worktree coordination | `rules/git/branch-and-worktree.md` and the applicable target-project rules |
+| Author short trigger | `prompts/short-triggers.md` and the linked authoritative asset |
 | Commit or push | `rules/git/commit-and-push.md` and Conventional Commit Generator |
 
 Load only the assets that apply. Use the [Toolkit Consumption Model](docs/consumption-model.md) when entering a product repository from this external Toolkit.
